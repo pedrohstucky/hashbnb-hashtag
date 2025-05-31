@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme inline {
+    --color-primary-400: var(--primary);
+}
+
+@layer base {
+    :root {
+        --primary: #FF385C;
+    }
+}
