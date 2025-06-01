@@ -2,7 +2,7 @@ import React from 'react'
 
 const Item = () => {
   return (
-    <a href="#"className='flex flex-col gap-3'>
+    <a href="/"className='flex flex-col gap-3'>
         <img src="https://a0.muscache.com/im/pictures/prohost-api/Hosting-669578550507098632/original/39fdbc39-2d75-41a4-90e2-2258701cc25a.jpeg?im_w=1200" alt="Imagem da acomodação"
         className="aspect-square object-cover rounded-2xl">
         </img>

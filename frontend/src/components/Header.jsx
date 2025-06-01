@@ -1,15 +1,16 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Header = () => {
   return (
     <header className="p-2 shadow-md">
       <div className="flex items-center justify-between px-4 py-4 sm:px-8 max-w-7xl mx-auto">
-          <div className="flex items-center">
+          <Link to="/" className="flex items-center">
             <img className="h-10" src="https://cdn.prod.website-files.com/61b9e0dd381626819c8d4f83/65e2198d48039ba6444f602b_logo%20hashtag%20-%20h.webp" alt="logo" />
             <p className='font-bold text-2xl text-primary-400'>ashbnb</p>
-        </div>
+        </Link>
 
-        <div className='hidden lg:flex items-center border border-grey-300 rounded-full pr-4 pl-6 py-2 shadow-md'>
+        <Link to="/" className='hidden lg:flex items-center border border-grey-300 rounded-full pr-4 pl-6 py-2 shadow-md'>
           <p className='pr-4 border-r border--grey-300'>Qualquer lugar</p>
           <p className='px-4 border-r border--grey-300'>Qualquer semana</p>
           <p className='px-4'>Hóspedes</p>
@@ -18,9 +19,9 @@ const Header = () => {
               <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
             </svg>
           </div>
-        </div>
+        </Link>
 
-        <div className='flex items-center border border-grey-300 rounded-full pr-4 pl-6 py-2 shadow-md'>
+        <Link to="/login" className='flex items-center border border-grey-300 rounded-full pr-4 pl-6 py-2 shadow-md'>
 
           <div className='flex items-center gap-2'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-5 text-gray-600">
@@ -33,7 +34,7 @@ const Header = () => {
 
             <p className="max-w-20 sm:max-w-32 truncate">Pedro Stucky</p>
           </div>
-        </div>
+        </Link>
       </div>
     </header>
   )
